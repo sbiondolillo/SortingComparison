@@ -2,7 +2,7 @@
  * BubbleSort Class
  * Samuel Biondolillo
  * CIS210M:ZZ Data Structures and Elementary Algorithms
- * Goal: To implement the BubbleSort Algorithm for sorting integers
+ * Goal: To implement the Bubble Sort Algorithm for sorting integers
  * Version  0.0.1   11/17/17
  */
 
