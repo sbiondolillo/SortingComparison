@@ -30,11 +30,11 @@ public class SortingComparison {
 		
 		final long startTime3 = System.currentTimeMillis();
 		results = SelectionSort.sort(randomNumbers);
-		final double duration3 = (System.currentTimeMillis() - startTime3) / 1000.0;
+		final double duration3 = (System.currentTimeMillis() - startTime3) / 1000.0;		
 		
 		System.out.println("Three different algorithms were run to sort a randomly-generated list of 100000 integers.");
-		System.out.println();
-		System.out.println("The results were as follows:");
+		System.out.println("Each algorithm has the same Worst-Case and Average-Case Time Complexity O(n^2)");
+		System.out.println("Our goal was to see how that plays out in reality. The results were as follows:");
 		System.out.println();
 		System.out.printf("Bubble Sort: approximately %.03f seconds%n", duration1);
 		System.out.printf("Insertion Sort: approximately %.03f seconds%n", duration2);
