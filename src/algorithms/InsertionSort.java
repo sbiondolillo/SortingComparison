@@ -5,6 +5,7 @@
  * Goal: To implement the Insertion Sort Algorithm for sorting integers
  * Version  0.0.1   11/17/17
  */
+
 package algorithms;
 
 public class InsertionSort {

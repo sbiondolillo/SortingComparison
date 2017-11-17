@@ -32,7 +32,7 @@ public class SortingComparison {
 		results = SelectionSort.sort(randomNumbers);
 		final double duration3 = (System.currentTimeMillis() - startTime3) / 1000.0;
 		
-		System.out.println("Three different algorithms were run to sort a randomly-generated list of 1000 integers.");
+		System.out.println("Three different algorithms were run to sort a randomly-generated list of 100000 integers.");
 		System.out.println();
 		System.out.println("The results were as follows:");
 		System.out.println();
