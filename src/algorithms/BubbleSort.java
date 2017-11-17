@@ -14,28 +14,30 @@ public class BubbleSort {
 		
 		int[] sourceArrayCopy = sourceArray.clone();
 		int sourceArrayCopyLength = sourceArrayCopy.length;
-		
+		boolean swapped;
 		int temp;
+		
 		for (int i = 0; i < sourceArrayCopyLength; i++) {
 			
-			boolean swapped = false;
-			for (int j = 0; j < sourceArrayCopyLength - i - 1; j++) {
+			swapped = false;
+			for (int j = 1; j < (sourceArrayCopyLength - i); j++) {
 				
-				if (sourceArrayCopy[j] > sourceArrayCopy[j+1]) {
+				if (sourceArrayCopy[j - 1] > sourceArrayCopy[j]) {
 					
-					temp = sourceArrayCopy[j];
-					sourceArrayCopy[j] = sourceArrayCopy[j+1];
-					sourceArrayCopy[j+1] = temp;
+					temp = sourceArrayCopy[j - 1];
+					sourceArrayCopy[j - 1] = sourceArrayCopy[j];
+					sourceArrayCopy[j] = temp;
 					swapped = true;
 					
 				}
+				
 			}
 			
 			if (!swapped)
 				break;
 			
 		}
-		return sourceArray;
+		return sourceArrayCopy;
 		
 	}
 
