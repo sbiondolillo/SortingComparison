@@ -12,7 +12,8 @@ public class SortingComparison {
 
 	public static void main(String[] args) {
 		
-		// Build array of random numbers
+		RandomNumberGenerator rng = new RandomNumberGenerator(100000);
+		int[] randomNumbers = rng.getNumbers();
 		
 		final long startTime1 = System.currentTimeMillis();
 		// call .sort() on first class
