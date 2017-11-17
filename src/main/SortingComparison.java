@@ -9,6 +9,7 @@
 package main;
 
 import algorithms.BubbleSort;
+import algorithms.InsertionSort;
 
 public class SortingComparison {
 
@@ -23,7 +24,7 @@ public class SortingComparison {
 		final double duration1 = (System.currentTimeMillis() - startTime1) / 1000.0;
 		
 		final long startTime2 = System.currentTimeMillis();
-		// call .sort on second class
+		results = InsertionSort.sort(randomNumbers);
 		final double duration2 = (System.currentTimeMillis() - startTime2) / 1000.0;
 		
 		final long startTime3 = System.currentTimeMillis();
@@ -34,8 +35,8 @@ public class SortingComparison {
 		System.out.println();
 		System.out.println("The results were as follows:");
 		System.out.println();
-		System.out.printf("Bubble Sort: aproximately %.03f seconds%n", duration1);
-		System.out.println("Algorithm 2: " + duration2 + " seconds");
+		System.out.printf("Bubble Sort: approximately %.03f seconds%n", duration1);
+		System.out.printf("Insertion Sort: approxiamtely %.03f seconds%n", duration2);
 		System.out.println("Algorithm 3: " + duration3 + " seconds");
 		
 
