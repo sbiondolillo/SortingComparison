@@ -16,6 +16,11 @@ public class SortingComparison {
 
 	public static void main(String[] args) {
 		
+		System.out.println();
+		System.out.println("Building a list of 100,000 random integers and attempting to sort them.");
+		System.out.println("This might take some time depending on your processor speed...");
+		System.out.println();
+		
 		RandomNumberGenerator rng = new RandomNumberGenerator(100000);
 		int[] randomNumbers = rng.getNumbers();
 		int[] results;
@@ -32,7 +37,7 @@ public class SortingComparison {
 		results = SelectionSort.sort(randomNumbers);
 		final double duration3 = (System.currentTimeMillis() - startTime3) / 1000.0;		
 		
-		System.out.println("Three different algorithms were run to sort a randomly-generated list of 100000 integers.");
+		System.out.println("Three different algorithms were run to sort the list.");
 		System.out.println("Each algorithm has the same Worst-Case and Average-Case Time Complexity O(n^2)");
 		System.out.println("Our goal was to see how that plays out in reality. The results were as follows:");
 		System.out.println();
